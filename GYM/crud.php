@@ -152,14 +152,28 @@ tr:hover { background: #e9ecef; }
     </div>
 
     <?php 
+
     if (isset($_GET['status'])) {
+
         $msg = '';
-        if ($_GET['status'] == 'added') $msg = 'Producto agregado exitosamente.';
-        if ($_GET['status'] == 'updated') $msg = 'Producto actualizado exitosamente.';
-        if ($_GET['status'] == 'deleted') $msg = 'Producto eliminado exitosamente.';
+
+        if ($_GET['status'] == 'added') {
+            $msg = 'Producto agregado exitosamente.';
+        } // Llave de cierre añadida
+
+        if ($_GET['status'] == 'updated') {
+            $msg = 'Producto actualizado exitosamente.';
+        } // Llave de cierre añadida
+
+        if ($_GET['status'] == 'deleted') {
+            $msg = 'Producto eliminado exitosamente.';
+        } // Llave de cierre añadida
+
         echo "<p class='status-msg' style='background-color:#28a745; color:white; padding:10px; border-radius:4px; margin-bottom:15px;'>$msg</p>";
+
     }
-    ?>
+
+?>
 
     <div class="form-section">
         <h3>Añadir Nuevo Producto</h3>
