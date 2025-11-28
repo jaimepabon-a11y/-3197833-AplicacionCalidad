@@ -27,9 +27,9 @@ El propósito del proyecto es demostrar buenas prácticas en calidad de software
 
 
 ## Tecnologías Utilizadas
-#PHP– Lenguaje principal del sistema.
+PHP– Lenguaje principal del sistema.
     
-#MySQL– Base de datos.
+MySQL– Base de datos.
 
 ## Control de Versiones 
 
